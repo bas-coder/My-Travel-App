@@ -1,0 +1,70 @@
+.card {
+    padding-top: 30px;
+
+    &__main {
+        padding: 20px;
+        display: flex;
+        box-shadow: #cfcfcf1a 0px 4px 6px -1px, #9191910f 0px 2px 4px -1px;
+        // align-items: center;
+    }
+
+    &__img {
+        height: 220px;
+        width: 180px;
+        padding: 0 10px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 400px;
+        padding: 0 10px;
+        text-overflow: ellipsis;
+
+        &-region {
+            display: flex;
+            align-items: center;
+
+            .MuiSvgIcon-root {
+                color: $brand-red;
+            }
+
+            p {
+                padding: 0 5px;
+            }
+
+            .location {
+                letter-spacing: 2pt;
+                font-size: 15px;
+                color: rgb(34, 34, 34);
+                font-family: 'Inter', sans-serif;
+            }
+
+            .link a {
+                color: $gray;
+                text-decoration: underline;
+                font-size: smaller;
+                user-select: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: $brand-black;
+                }
+            }
+
+        }
+
+        .description {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.header {
+    background-color: $brand-black;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+    &__logo {
+        width: 30px;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        padding: 0 10px;
+        color: $white;
+        font-size: medium;
+    }
+}
